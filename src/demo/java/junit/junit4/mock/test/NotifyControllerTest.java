@@ -1,9 +1,12 @@
 package demo.java.junit.junit4.mock.test;
 
-import org.junit.Test;
+import static org.mockito.Matchers.eq;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
+
 import org.junit.Before;
-import org.mockito.Mock;
-import static org.mockito.Mockito.*;
+import org.junit.Test;
 
 import demo.java.junit.junit4.mock.IMessageService;
 import demo.java.junit.junit4.mock.IUserService;
@@ -15,6 +18,7 @@ import demo.java.junit.junit4.mock.NotifyController;
  * import static org.mockito.Mockito.*;
  * 否则无法使用mock(class)这类的命令
  * 
+ * 或者用Mockito.mock(class) Mockito.when 等命令
  */
 public class NotifyControllerTest {
 
