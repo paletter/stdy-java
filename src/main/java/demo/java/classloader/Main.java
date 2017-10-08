@@ -1,12 +1,15 @@
 package demo.java.classloader;
 
-import sun.reflect.Reflection;
 
 public class Main {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 		
-		ClassLoader cl = TestClass.class.getClassLoader();
-		System.out.println(cl.toString());
+		System.out.println(TestClass.class.getName());
+		
+		Class c = Class.forName(TestClass.class.getName(), 
+				true, new MyClassLoader());
+		
+		System.out.println(c);
 	}
 }
