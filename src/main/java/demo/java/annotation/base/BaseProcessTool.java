@@ -19,10 +19,10 @@ public class BaseProcessTool {
 		for(Method method : targetClass.getMethods()) {
 			
 			/**
-			 * Method继承了java.lang.reflect.AnnotatedElement接口，有以下几种主要方法
+			 * Method缁ф壙浜唈ava.lang.reflect.AnnotatedElement鎺ュ彛锛屾湁浠ヤ笅鍑犵涓昏鏂规硶
 			 * 
-			 * - isAnnotationPresent(Class<? extends Annotation> annotationClass)：判断该程序元素上是否存在指定类型的注解，如果存在则返回true，否则返回false
-			 * - getAnnotation(Class<T> annotationClass)：返回该程序元素上存在的指定类型的注解，如果该类型的注解不存在，则返回null 
+			 * - isAnnotationPresent(Class<? extends Annotation> annotationClass)锛氬垽鏂绋嬪簭鍏冪礌涓婃槸鍚﹀瓨鍦ㄦ寚瀹氱被鍨嬬殑娉ㄨВ锛屽鏋滃瓨鍦ㄥ垯杩斿洖true锛屽惁鍒欒繑鍥瀎alse
+			 * - getAnnotation(Class<T> annotationClass)锛氳繑鍥炶绋嬪簭鍏冪礌涓婂瓨鍦ㄧ殑鎸囧畾绫诲瀷鐨勬敞瑙ｏ紝濡傛灉璇ョ被鍨嬬殑娉ㄨВ涓嶅瓨鍦紝鍒欒繑鍥瀗ull 
 			 * - Annotation[] getAnnotations()
 			 */
 			if(method.isAnnotationPresent(BaseMethodAnno.class)) {
