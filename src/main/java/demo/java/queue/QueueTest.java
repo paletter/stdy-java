@@ -8,10 +8,9 @@ import java.util.concurrent.ConcurrentLinkedQueue;
 
 public class QueueTest {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		
 		testConcurrentLinkedQueue();
-		
 	}
 	
 	public static void testLinkedListQueue() {

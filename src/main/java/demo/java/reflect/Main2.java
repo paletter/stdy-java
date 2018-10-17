@@ -6,12 +6,10 @@ import java.lang.reflect.Parameter;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.mockito.asm.ClassReader;
+public class Main2 {
 
-public class Main {
+	public Main2() {
 
-	public static void main(String[] args) {
-		
 		try {
 			
 			Class userClass = Class.forName("demo.java.reflect.User");
